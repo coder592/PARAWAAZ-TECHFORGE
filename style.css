@@ -1449,7 +1449,10 @@ ul {
 .project-preview {
 
     height:
-        285px;
+        auto;
+
+    aspect-ratio:
+        16 / 9;
 
     position:
         relative;
@@ -3326,7 +3329,10 @@ ul {
     .project-preview {
 
         height:
-            215px;
+            auto;
+
+        aspect-ratio:
+            16 / 9;
 
     }
 
@@ -3960,7 +3966,8 @@ html.offline::after {
 /* Mobile */
 @media (max-width: 768px) {
     .hero {
-        margin-top: 46px !important;
+        /* Keep the hero fully below the fixed mobile navbar. */
+        margin-top: 62px !important;
     }
 }
 /* ==================================================
